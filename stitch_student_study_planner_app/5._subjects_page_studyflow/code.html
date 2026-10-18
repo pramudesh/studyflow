@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-surface": "#213145",
+        "on-tertiary": "#ffffff",
+        "on-secondary-container": "#fffbff",
+        "on-secondary-fixed": "#25005a",
+        "surface-variant": "#d3e4fe",
+        "surface-container-lowest": "#ffffff",
+        "on-primary": "#ffffff",
+        "secondary": "#712ae2",
+        "primary-container": "#2563eb",
+        "background": "#f8f9ff",
+        "surface-bright": "#f8f9ff",
+        "secondary-fixed": "#eaddff",
+        "on-background": "#0b1c30",
+        "surface-container-low": "#eff4ff",
+        "on-error": "#ffffff",
+        "outline": "#737686",
+        "tertiary-container": "#007d55",
+        "on-secondary-fixed-variant": "#5a00c6",
+        "on-tertiary-container": "#bdffdb",
+        "on-surface-variant": "#434655",
+        "primary": "#004ac6",
+        "on-primary-fixed": "#00174b",
+        "primary-fixed-dim": "#b4c5ff",
+        "primary-fixed": "#dbe1ff",
+        "inverse-primary": "#b4c5ff",
+        "on-surface": "#0b1c30",
+        "outline-variant": "#c3c6d7",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed": "#002113",
+        "tertiary": "#006242",
+        "error": "#ba1a1a",
+        "tertiary-fixed": "#6ffbbe",
+        "error-container": "#ffdad6",
+        "surface-dim": "#cbdbf5",
+        "on-error-container": "#93000a",
+        "surface": "#f8f9ff",
+        "surface-container-highest": "#d3e4fe",
+        "secondary-fixed-dim": "#d2bbff",
+        "inverse-on-surface": "#eaf1ff",
+        "surface-container": "#e5eeff",
+        "on-primary-fixed-variant": "#003ea8",
+        "surface-tint": "#0053db",
+        "tertiary-fixed-dim": "#4edea3",
+        "on-primary-container": "#eeefff",
+        "surface-container-high": "#dce9ff",
+        "on-tertiary-fixed-variant": "#005236",
+        "secondary-container": "#8a4cfc"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xs": "0.25rem",
+        "margin": "2rem",
+        "space-lg": "1.5rem",
+        "gutter-mobile": "0.75rem",
+        "space-md": "1rem",
+        "gutter": "1.5rem",
+        "space-xl": "2.5rem",
+        "margin-mobile": "1rem",
+        "space-sm": "0.5rem"
+      },
+      "fontFamily": {
+        "title-md": [
+          "Plus Jakarta Sans"
+        ],
+        "label-sm": [
+          "Inter"
+        ],
+        "headline-md": [
+          "Plus Jakarta Sans"
+        ],
+        "body-sm": [
+          "Inter"
+        ],
+        "headline-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "display-hero-mobile": [
+          "Plus Jakarta Sans"
+        ],
+        "label-md": [
+          "Inter"
+        ],
+        "display-hero": [
+          "Plus Jakarta Sans"
+        ],
+        "body-lg": [
+          "Inter"
+        ],
+        "headline-lg-mobile": [
+          "Plus Jakarta Sans"
+        ],
+        "body-md": [
+          "Inter"
+        ],
+        "headline-lg": [
+          "Plus Jakarta Sans"
+        ]
+      },
+      "fontSize": {
+        "title-md": [
+          "16px",
+          {
+            "lineHeight": "22px",
+            "letterSpacing": "0",
+            "fontWeight": "600"
+          }
+        ],
+        "label-sm": [
+          "11px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.03em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-md": [
+          "22px",
+          {
+            "lineHeight": "28px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-sm": [
+          "12px",
+          {
+            "lineHeight": "18px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-sm": [
+          "18px",
+          {
+            "lineHeight": "24px",
+            "letterSpacing": "-0.005em",
+            "fontWeight": "600"
+          }
+        ],
+        "display-hero-mobile": [
+          "30px",
+          {
+            "lineHeight": "38px",
+            "letterSpacing": "-0.015em",
+            "fontWeight": "700"
+          }
+        ],
+        "label-md": [
+          "13px",
+          {
+            "lineHeight": "18px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "500"
+          }
+        ],
+        "display-hero": [
+          "40px",
+          {
+            "lineHeight": "48px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "700"
+          }
+        ],
+        "body-lg": [
+          "16px",
+          {
+            "lineHeight": "26px",
+            "letterSpacing": "0",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-lg-mobile": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-md": [
+          "14px",
+          {
+            "lineHeight": "22px",
+            "letterSpacing": "0",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-lg": [
+          "32px",
+          {
+            "lineHeight": "40px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "700"
+          }
+        ]
+      }
+    },
+  }
+}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 flex items-center gap-3 px-space-lg"><img alt="StudyFlow Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1ULcoEW6hopLXMyZf9KFbFElv9uKUPATyi0fYwup3oxYIAYXeVYJKD6k388hlBaz4VZ9eE70VxLJLLEYj3H0dopErfvER6xliYTYu3CDLbJo1dfUfmHEflLFy76E_xUHW7z6P92OgR0dL9Kf8rbwa7KGpoudzWqfWkBY6GmG_PARjezsIhItz0DzmAVQjpIgKnAwIg4sCNcZRLSpfQGe9P92FVUu8p_eP8K63uiheVe2DgnBDC07_btXqhW"/><span class="font-title-md text-title-md text-primary tracking-tight">StudyFlow</span><span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">Student Pro</span></div><div class="px-space-md py-space-xs"><div class="bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">calendar_month</span><span class="font-label-md text-label-md text-on-surface">Fall Semester 2025</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div></div><div class="px-space-md pt-space-xs"><button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-2.5 px-space-md rounded-xl flex items-center justify-center gap-2 shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:bg-primary hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[18px]">add</span><span>Add Task</span></button></div><nav class="flex flex-col gap-1 px-space-md pt-space-md" data-active-classes="bg-primary-container text-on-primary-container font-title-md rounded-xl"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tasks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span>Tasks</span></a><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 transition-colors bg-primary-container text-on-primary-container font-title-md rounded-xl" data-path="subjects" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Subjects</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="progress" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span>Progress</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-md"><div class="bg-surface-container-low rounded-xl p-space-sm flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIsb2yz-toUh5eZbUaQ8wGVm1M4t551hoIPiTP6Ky4MfJYH_kWtL2z3Wh53YpT3SX5XMpe6bVN223akLA7w2mVwDo90ad-pnP-jrULy2LhAWDLbthCewB7I_ORdy0Et3Jdry6X2W3sfNaCWuJyE10nVM1xs8gTzz0If6YNlKB6Gux8xJfNV4MGx3R04Nmzgg6gEIByUAEePcqddTtzyTMN96KdryJqEAscjtPrgmCRCrzRezjliIaahw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-tertiary-container rounded-full"></span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Maya Lin</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Computer Science</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">more_vert</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-4 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search tasks, notes, subjects... ⌘K" type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-1.5 bg-surface-container-low px-space-sm py-1.5 rounded-xl"><span class="material-symbols-outlined text-on-surface-variant text-[16px]">today</span><span class="font-label-md text-label-md text-on-surface">Tuesday, Oct 24</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><button class="bg-secondary text-on-secondary font-label-md text-label-md px-space-md py-2 rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">timer</span><span>Quick Study</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIsb2yz-toUh5eZbUaQ8wGVm1M4t551hoIPiTP6Ky4MfJYH_kWtL2z3Wh53YpT3SX5XMpe6bVN223akLA7w2mVwDo90ad-pnP-jrULy2LhAWDLbthCewB7I_ORdy0Et3Jdry6X2W3sfNaCWuJyE10nVM1xs8gTzz0If6YNlKB6Gux8xJfNV4MGx3R04Nmzgg6gEIByUAEePcqddTtzyTMN96KdryJqEAscjtPrgmCRCrzRezjliIaahw"/></div></div></div></header><main class="relative pt-16 bg-background w-full min-h-screen"><div class="flex flex-col w-full">
+<!-- Content Canvas -->
+<div class="px-space-lg py-space-xl max-w-7xl mx-auto w-full flex flex-col gap-space-xl">
+<!-- Page Header & Action Cluster -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full uppercase tracking-wider">Academic Term</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> In Session (Week 8 of 16)
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Enrolled Subjects &amp; Courses</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage your course load, syllabus milestones, and track individual course progress for Fall 2025.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="bg-surface-container-high text-primary font-label-md text-label-md px-space-md py-2.5 rounded-xl hover:bg-surface-container-highest transition-colors flex items-center gap-2 shadow-sm" id="open-import-btn">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Import from Canvas / Blackboard</span>
+</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-space-md py-2.5 rounded-xl hover:bg-primary transition-all flex items-center gap-2 shadow-sm hover:shadow-md" id="open-add-modal-btn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add New Subject</span>
+</button>
+</div>
+</div>
+<!-- Semester Overview KPI Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Courses</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enrolled</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Full-Time Standing
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary z-10">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-primary-container/5 rounded-full pointer-events-none"></div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Credit Load</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">16</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Units</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Target graduation: 2026</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary z-10">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-secondary/5 rounded-full pointer-events-none"></div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Avg. Completion</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">76%</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">+4.2%</span>
+</div>
+<div class="w-28 bg-surface-container-high h-1.5 rounded-full overflow-hidden mt-1.5">
+<div class="bg-tertiary h-full rounded-full" style="width: 76%"></div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary z-10">
+<span class="material-symbols-outlined text-[24px]">donut_large</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-tertiary/5 rounded-full pointer-events-none"></div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pending Tasks</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">11</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Due soon</span>
+</div>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> 2 High Priority
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-error-container/40 flex items-center justify-center text-error z-10">
+<span class="material-symbols-outlined text-[24px]">pending_actions</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-error/5 rounded-full pointer-events-none"></div>
+</div>
+</div>
+<!-- Active Course Grid -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Active Courses</h2>
+<span class="bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Fall 2025</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+<span>Sort by: Milestone Progress</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Subject Card 1: CS 301 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group">
+<!-- Left Color Accent Bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex flex-col gap-space-md pl-2">
+<!-- Header & Action Menu -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">CS 301</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Credits</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mon/Wed 10:00 AM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Algorithms &amp; Data Structures</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Prof. Robert Vance</span>
+<span class="text-outline-variant">•</span>
+<span class="text-tertiary font-label-sm text-label-sm">Grade: A- (91.4%)</span>
+</div>
+</div>
+<!-- Action Menu Dropdown Container -->
+<div class="relative">
+<button class="menu-toggle-btn p-1.5 rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors" data-menu="menu-cs301">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="dropdown-menu hidden absolute right-0 top-8 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1.5 flex flex-col gap-0.5" id="menu-cs301">
+<button class="edit-subject-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full" data-credits="4" data-instructor="Prof. Robert Vance" data-title="CS 301 - Algorithms &amp; Data Structures">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span> Edit Subject
+                  </button>
+<button class="flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span> Archive Term
+                  </button>
+<div class="h-px bg-surface-container-highest my-0.5"></div>
+<button class="delete-trigger-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-error hover:bg-error-container/30 transition-colors text-left w-full" data-title="CS 301 - Algorithms &amp; Data Structures">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Course
+                  </button>
+</div>
+</div>
+</div>
+<!-- Progress Module -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Milestones Progress</span>
+<span class="text-primary font-bold">84% Completed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 84%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>16 of 19 syllabus milestones finished</span>
+<span class="text-on-surface font-medium">3 remaining</span>
+</div>
+</div>
+<!-- Stats & Quick Deadlines -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 3 Pending Tasks
+                </span>
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">event_upcoming</span> 1 Exam Next Week
+                </span>
+</div>
+<!-- Upcoming Item Previews -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-primary-container/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">code</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Problem Set 4</span>
+<span class="font-body-sm text-body-sm text-error truncate">Due Thu • 11:59 PM</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Midterm Exam</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">In 6 days • Hall C</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Subject Card 2: PSYCH 110 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group">
+<!-- Left Color Accent Bar (Purple) -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex flex-col gap-space-md pl-2">
+<!-- Header & Action Menu -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">PSYCH 110</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Credits</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tue/Thu 1:30 PM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Intro to Cognitive Science</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Dr. Elena Rostova</span>
+<span class="text-outline-variant">•</span>
+<span class="text-tertiary font-label-sm text-label-sm">Grade: A (94.8%)</span>
+</div>
+</div>
+<!-- Dropdown Menu -->
+<div class="relative">
+<button class="menu-toggle-btn p-1.5 rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors" data-menu="menu-psych110">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="dropdown-menu hidden absolute right-0 top-8 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1.5 flex flex-col gap-0.5" id="menu-psych110">
+<button class="edit-subject-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full" data-credits="3" data-instructor="Dr. Elena Rostova" data-title="PSYCH 110 - Intro to Cognitive Science">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span> Edit Subject
+                  </button>
+<button class="flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span> Archive Term
+                  </button>
+<div class="h-px bg-surface-container-highest my-0.5"></div>
+<button class="delete-trigger-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-error hover:bg-error-container/30 transition-colors text-left w-full" data-title="PSYCH 110 - Intro to Cognitive Science">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Course
+                  </button>
+</div>
+</div>
+</div>
+<!-- Progress Module -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Milestones Progress</span>
+<span class="text-secondary font-bold">70% Completed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all duration-500" style="width: 70%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>14 of 20 syllabus milestones finished</span>
+<span class="text-on-surface font-medium">6 remaining</span>
+</div>
+</div>
+<!-- Stats & Quick Deadlines -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 4 Pending Tasks
+                </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">psychology</span> Next: Chapter 6 Quiz
+                </span>
+</div>
+<!-- Upcoming Item Previews -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">quiz</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Neural Plasticity Quiz</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Friday • 30 Mins</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">article</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Perception Case Paper</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Oct 30 • 1,500 words</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Subject Card 3: PHYS 202 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group">
+<!-- Left Color Accent Bar (Amber / Coral) -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-500"></div>
+<div class="flex flex-col gap-space-md pl-2">
+<!-- Header & Action Menu -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="bg-amber-100 text-amber-800 font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">PHYS 202</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Credits</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mon/Fri 2:00 PM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-amber-700 transition-colors">General Physics &amp; Mechanics</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Dr. Marcus Chen</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Grade: B+ (87.2%)</span>
+</div>
+</div>
+<!-- Dropdown Menu -->
+<div class="relative">
+<button class="menu-toggle-btn p-1.5 rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors" data-menu="menu-phys202">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="dropdown-menu hidden absolute right-0 top-8 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1.5 flex flex-col gap-0.5" id="menu-phys202">
+<button class="edit-subject-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full" data-credits="4" data-instructor="Dr. Marcus Chen" data-title="PHYS 202 - General Physics &amp; Mechanics">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span> Edit Subject
+                  </button>
+<button class="flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span> Archive Term
+                  </button>
+<div class="h-px bg-surface-container-highest my-0.5"></div>
+<button class="delete-trigger-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-error hover:bg-error-container/30 transition-colors text-left w-full" data-title="PHYS 202 - General Physics &amp; Mechanics">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Course
+                  </button>
+</div>
+</div>
+</div>
+<!-- Progress Module -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Milestones Progress</span>
+<span class="text-amber-700 font-bold">62% Completed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full rounded-full transition-all duration-500" style="width: 62%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>10 of 16 syllabus milestones finished</span>
+<span class="text-on-surface font-medium">6 remaining</span>
+</div>
+</div>
+<!-- Stats & Quick Deadlines -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> 2 Pending Tasks
+                </span>
+<span class="bg-amber-100 text-amber-900 font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab Report Draft
+                </span>
+</div>
+<!-- Upcoming Item Previews -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Rotational Dynamics Lab</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Due Mon • Report 3</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Torque Exercises</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">In 4 days</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Subject Card 4: MATH 240 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group">
+<!-- Left Color Accent Bar (Emerald) -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex flex-col gap-space-md pl-2">
+<!-- Header & Action Menu -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="bg-tertiary/10 text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">MATH 240</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Credits</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tue/Thu 9:00 AM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">Multivariable Calculus</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Prof. Sarah Jenkins</span>
+<span class="text-outline-variant">•</span>
+<span class="text-tertiary font-label-sm text-label-sm">Grade: A+ (97.5%)</span>
+</div>
+</div>
+<!-- Dropdown Menu -->
+<div class="relative">
+<button class="menu-toggle-btn p-1.5 rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors" data-menu="menu-math240">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="dropdown-menu hidden absolute right-0 top-8 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1.5 flex flex-col gap-0.5" id="menu-math240">
+<button class="edit-subject-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full" data-credits="4" data-instructor="Prof. Sarah Jenkins" data-title="MATH 240 - Multivariable Calculus">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span> Edit Subject
+                  </button>
+<button class="flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-left w-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span> Archive Term
+                  </button>
+<div class="h-px bg-surface-container-highest my-0.5"></div>
+<button class="delete-trigger-btn flex items-center gap-2 px-3 py-2 rounded-lg font-label-md text-label-md text-error hover:bg-error-container/30 transition-colors text-left w-full" data-title="MATH 240 - Multivariable Calculus">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Course
+                  </button>
+</div>
+</div>
+</div>
+<!-- Progress Module -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Milestones Progress</span>
+<span class="text-tertiary font-bold">90% Completed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" style="width: 90%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>18 of 20 syllabus milestones finished</span>
+<span class="text-on-surface font-medium">2 remaining</span>
+</div>
+</div>
+<!-- Stats & Quick Deadlines -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 1 Pending Task
+                </span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">military_tech</span> Honor Roll Pace
+                </span>
+</div>
+<!-- Upcoming Item Previews -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">functions</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Surface Integrals HW</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Due Nov 2 • Online</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">group</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Study Session</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Wed • Library Rm 4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Inline Add Slot / Custom Study Module -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col lg:flex-row gap-space-lg items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">note_add</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Need to track an Independent Study or Lab?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Create modular course goals, log research hours, and track custom grading rubrics.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="w-full sm:w-auto bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md px-space-lg py-2.5 rounded-xl transition-all flex items-center justify-center gap-2" id="inline-add-trigger">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Quick Enroll / Custom Track</span>
+</button>
+</div>
+</div>
+<!-- Interactive Course Syllabus & Resource Quick Bank -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Syllabus File Vault -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md col-span-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">folder_special</span>
+<h3 class="font-title-md text-title-md text-on-surface">Course Documents &amp; Syllabi</h3>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">4 Synced Files</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-error text-[24px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate group-hover:text-primary transition-colors">CS301_Syllabus_Fall2025.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1.4 MB • Updated 3d ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">download</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-error text-[24px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate group-hover:text-primary transition-colors">PSYCH110_Reading_List.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">890 KB • Updated 2w ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">download</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[24px]">description</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate group-hover:text-primary transition-colors">PHYS202_LabSchedule_v2.docx</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.1 MB • Updated yesterday</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">download</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-primary text-[24px]">link</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate group-hover:text-primary transition-colors">MATH240_Jenkins_Webwork.url</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">External Portal Link</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">open_in_new</span>
+</div>
+</div>
+</div>
+<!-- Instructor Office Hours Panel -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">contact_support</span>
+<h3 class="font-title-md text-title-md text-on-surface">Instructor Office Hours</h3>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm px-2 py-0.5 rounded-full">This Week</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-2 h-2 rounded-full bg-primary shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Prof. Vance (CS 301)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Today • 3:00 - 4:30 PM</span>
+</div>
+</div>
+<button class="text-primary hover:bg-surface-container-highest p-1.5 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-2 h-2 rounded-full bg-amber-500 shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Dr. Chen (PHYS 202)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tomorrow • 11:00 AM</span>
+</div>
+</div>
+<button class="text-primary hover:bg-surface-container-highest p-1.5 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-2 h-2 rounded-full bg-tertiary shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Prof. Jenkins (MATH 240)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Thursday • 2:00 PM</span>
+</div>
+</div>
+<button class="text-primary hover:bg-surface-container-highest p-1.5 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Add New Subject Modal / Drawer -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="add-subject-modal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg shadow-xl p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">library_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Add New Subject</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fill out course metrics for syllabus tracking</p>
+</div>
+</div>
+<button class="p-1 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" id="close-add-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="add-course-form" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Course Code &amp; Title</label>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="e.g. CS 450 - Artificial Intelligence" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Instructor Name</label>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="e.g. Dr. Alan Turing" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Credit Units</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container">
+<option value="4">4 Credits</option>
+<option value="3">3 Credits</option>
+<option value="2">2 Credits</option>
+<option value="1">1 Credit</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Meeting Schedule</label>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="e.g. Mon/Wed 1:00 PM" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Target Grade</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container">
+<option value="A+">A+ (97 - 100%)</option>
+<option value="A">A (93 - 96%)</option>
+<option value="A-">A- (90 - 92%)</option>
+<option value="B+">B+ (87 - 89%)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Subject Accent Theme</label>
+<div class="flex items-center gap-3 py-1">
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4" name="color-pick" type="radio"/>
+<span class="w-5 h-5 rounded-full bg-primary-container inline-block"></span>
+</label>
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input class="accent-secondary w-4 h-4" name="color-pick" type="radio"/>
+<span class="w-5 h-5 rounded-full bg-secondary-container inline-block"></span>
+</label>
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input class="accent-amber-500 w-4 h-4" name="color-pick" type="radio"/>
+<span class="w-5 h-5 rounded-full bg-amber-500 inline-block"></span>
+</label>
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input class="accent-tertiary w-4 h-4" name="color-pick" type="radio"/>
+<span class="w-5 h-5 rounded-full bg-tertiary inline-block"></span>
+</label>
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input class="accent-rose-500 w-4 h-4" name="color-pick" type="radio"/>
+<span class="w-5 h-5 rounded-full bg-rose-500 inline-block"></span>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors" id="cancel-add-btn" type="button">
+            Cancel
+          </button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-2.5 rounded-xl hover:bg-primary transition-all shadow-sm" id="save-course-btn" type="submit">
+            Save Course
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Edit Subject Modal -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="edit-subject-modal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg shadow-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Edit Subject Details</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Update course instructor, schedule, or milestone goals</p>
+</div>
+</div>
+<button class="p-1 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" id="close-edit-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Subject Title</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" id="edit-title-input" type="text" value="CS 301 - Algorithms &amp; Data Structures"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Instructor</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" id="edit-instructor-input" type="text" value="Prof. Robert Vance"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Credit Units</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container" id="edit-credits-input" type="number" value="4"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors" id="cancel-edit-btn" type="button">
+            Cancel
+          </button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-2.5 rounded-xl hover:bg-primary transition-all shadow-sm" id="update-course-btn" type="button">
+            Update Changes
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Delete Confirmation Modal -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="delete-confirm-modal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-md shadow-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Confirm Course Deletion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Are you sure you want to remove this subject?</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant bg-surface-container-low p-space-sm rounded-xl">
+        All linked assignments, milestones, and syllabus files for <strong class="text-on-surface font-semibold" id="delete-course-name">this course</strong> will be permanently removed from your active dashboard.
+      </p>
+<div class="flex items-center justify-end gap-space-sm pt-1">
+<button class="px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors" id="cancel-delete-btn">
+          Keep Course
+        </button>
+<button class="bg-error text-on-error font-label-md text-label-md px-space-md py-2.5 rounded-xl hover:bg-error/90 transition-all shadow-sm" id="confirm-delete-action-btn">
+          Yes, Delete Course
+        </button>
+</div>
+</div>
+</div>
+<!-- Import Modal from Canvas / Blackboard -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="import-modal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg shadow-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">LMS Integration Sync</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sync syllabi and assignments via API token</p>
+</div>
+</div>
+<button class="p-1 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" id="close-import-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-high flex items-center gap-2.5 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Canvas LMS</span>
+<span class="font-body-sm text-body-sm text-tertiary">Connected</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2.5 cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">hub</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Blackboard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Not Linked</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Select Semester Term to Fetch</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container">
+<option>Fall 2025 (4 Courses found)</option>
+<option>Spring 2025 (Archived)</option>
+</select>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Syncing will pull syllabus schedules, pending deadlines, and instructor email addresses directly into StudyFlow.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-space-md py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors" id="cancel-import-btn">
+            Cancel
+          </button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-2.5 rounded-xl hover:bg-primary transition-all shadow-sm flex items-center gap-2" id="confirm-sync-btn">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sync All Courses Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Vanilla JS Interactions -->
+<script>
+    // Highlight subjects menu link in app shell
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'subjects') {
+          link.classList.add('bg-primary-container', 'text-on-primary-container', 'font-title-md', 'rounded-xl');
+          link.classList.remove('text-on-surface-variant');
+        } else {
+          link.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-title-md');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+
+      // Dropdown menus handling
+      const menuButtons = document.querySelectorAll('.menu-toggle-btn');
+      menuButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const targetMenuId = btn.getAttribute('data-menu');
+          const targetMenu = document.getElementById(targetMenuId);
+          
+          // Close all other dropdowns
+          document.querySelectorAll('.dropdown-menu').forEach(m => {
+            if (m.id !== targetMenuId) m.classList.add('hidden');
+          });
+
+          if (targetMenu) {
+            targetMenu.classList.toggle('hidden');
+          }
+        });
+      });
+
+      // Global click to close menus
+      document.addEventListener('click', () => {
+        document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.add('hidden'));
+      });
+
+      // Add Subject Modal Controls
+      const addModal = document.getElementById('add-subject-modal');
+      const openAddBtn = document.getElementById('open-add-modal-btn');
+      const inlineAddTrigger = document.getElementById('inline-add-trigger');
+      const closeAddBtn = document.getElementById('close-add-modal-btn');
+      const cancelAddBtn = document.getElementById('cancel-add-btn');
+      const saveCourseBtn = document.getElementById('save-course-btn');
+
+      const openAddModal = () => addModal.classList.remove('hidden');
+      const closeAddModal = () => addModal.classList.add('hidden');
+
+      if (openAddBtn) openAddBtn.addEventListener('click', openAddModal);
+      if (inlineAddTrigger) inlineAddTrigger.addEventListener('click', openAddModal);
+      if (closeAddBtn) closeAddBtn.addEventListener('click', closeAddModal);
+      if (cancelAddBtn) cancelAddBtn.addEventListener('click', closeAddModal);
+      if (saveCourseBtn) {
+        saveCourseBtn.addEventListener('click', () => {
+          closeAddModal();
+        });
+      }
+
+      // Edit Subject Modal Controls
+      const editModal = document.getElementById('edit-subject-modal');
+      const closeEditBtn = document.getElementById('close-edit-modal-btn');
+      const cancelEditBtn = document.getElementById('cancel-edit-btn');
+      const updateCourseBtn = document.getElementById('update-course-btn');
+      const editTitleInput = document.getElementById('edit-title-input');
+      const editInstructorInput = document.getElementById('edit-instructor-input');
+      const editCreditsInput = document.getElementById('edit-credits-input');
+
+      document.querySelectorAll('.edit-subject-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const title = btn.getAttribute('data-title');
+          const instructor = btn.getAttribute('data-instructor');
+          const credits = btn.getAttribute('data-credits');
+          if (editTitleInput && title) editTitleInput.value = title;
+          if (editInstructorInput && instructor) editInstructorInput.value = instructor;
+          if (editCreditsInput && credits) editCreditsInput.value = credits;
+          document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.add('hidden'));
+          editModal.classList.remove('hidden');
+        });
+      });
+
+      const closeEditModal = () => editModal.classList.add('hidden');
+      if (closeEditBtn) closeEditBtn.addEventListener('click', closeEditModal);
+      if (cancelEditBtn) cancelEditBtn.addEventListener('click', closeEditModal);
+      if (updateCourseBtn) updateCourseBtn.addEventListener('click', closeEditModal);
+
+      // Delete Confirmation Modal Controls
+      const deleteModal = document.getElementById('delete-confirm-modal');
+      const deleteCourseName = document.getElementById('delete-course-name');
+      const cancelDeleteBtn = document.getElementById('cancel-delete-btn');
+      const confirmDeleteActionBtn = document.getElementById('confirm-delete-action-btn');
+
+      document.querySelectorAll('.delete-trigger-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const courseTitle = btn.getAttribute('data-title');
+          if (deleteCourseName && courseTitle) deleteCourseName.textContent = courseTitle;
+          document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.add('hidden'));
+          deleteModal.classList.remove('hidden');
+        });
+      });
+
+      const closeDeleteModal = () => deleteModal.classList.add('hidden');
+      if (cancelDeleteBtn) cancelDeleteBtn.addEventListener('click', closeDeleteModal);
+      if (confirmDeleteActionBtn) confirmDeleteActionBtn.addEventListener('click', closeDeleteModal);
+
+      // Import LMS Modal Controls
+      const importModal = document.getElementById('import-modal');
+      const openImportBtn = document.getElementById('open-import-btn');
+      const closeImportBtn = document.getElementById('close-import-modal-btn');
+      const cancelImportBtn = document.getElementById('cancel-import-btn');
+      const confirmSyncBtn = document.getElementById('confirm-sync-btn');
+
+      const openImportModal = () => importModal.classList.remove('hidden');
+      const closeImportModal = () => importModal.classList.add('hidden');
+
+      if (openImportBtn) openImportBtn.addEventListener('click', openImportModal);
+      if (closeImportBtn) closeImportBtn.addEventListener('click', closeImportModal);
+      if (cancelImportBtn) cancelImportBtn.addEventListener('click', closeImportModal);
+      if (confirmSyncBtn) confirmSyncBtn.addEventListener('click', closeImportModal);
+    });
+  </script>
+</div></main></div></body></html>

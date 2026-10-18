@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production builds
+dist/
+**/dist/
+
+# Environment variables & secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local SQLite databases & logs
+backend/data/
+*.db
+*.log
+npm-debug.log*
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large ZIP archives
+zips/
